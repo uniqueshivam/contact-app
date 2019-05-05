@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="6dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="6dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="3dp"
+    android:layout_centerHorizontal="true"
+    android:shape="ring"
+    android:thicknessRatio="1.9">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:id="@+id/contact_dp"
+            android:src="@drawable/boss"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.7"
+            android:layout_marginLeft="13dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_name"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/right_arrow"/>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

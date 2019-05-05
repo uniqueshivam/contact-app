@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/profile_page_layout"
+    android:weightSum="1"
+    tools:context=".contactProfile_clicked">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:background="#FFFAFA"
+        android:layout_height="0dp">
+        
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/left"
+            android:layout_gravity="left"
+            android:id="@+id/back_to_main"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="100dp"
+            android:layout_centerHorizontal="true"
+            android:shape="rectangle"
+            android:layout_gravity="center"
+            app:cardCornerRadius="75dp"
+            android:thicknessRatio="1.9"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/man"
+                android:layout_gravity="center"
+                app:civ_border_color="@color/white"/>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_contact_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Shivam"
+
+                android:fontFamily="monospace"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="12"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:src="@drawable/mobile"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_contact_mobile"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_weight="8"
+                android:layout_gravity="center"
+                android:text="908756756"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:id="@+id/get_message"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/message" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/background_colour"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="12"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/envelope"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_contact_email"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_weight="8"
+                android:layout_gravity="center"
+                android:text="uniqueshivam@gmail.com"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="monospace"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:id="@+id/get_mail"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/email_send" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/background_colour"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:elevation="20dp"
+                android:layout_centerHorizontal="true"
+                android:shape="ring"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="18dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/get_call"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/call"/>
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Get Route"-->
+        <!--android:textSize="20dp"-->
+        <!--android:id="@+id/get_route"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_gravity="center"/>-->
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Chat with donor"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:textColor="@color/blood_red"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_gravity="center"/>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
